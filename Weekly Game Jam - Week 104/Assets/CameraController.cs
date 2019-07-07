@@ -9,6 +9,12 @@ public class CameraController : MonoBehaviour
     float pitch = 0;
     float yaw = 0;
 
+    void Awake()
+    {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     void Update()
     {
         //transform.position = player.position;
