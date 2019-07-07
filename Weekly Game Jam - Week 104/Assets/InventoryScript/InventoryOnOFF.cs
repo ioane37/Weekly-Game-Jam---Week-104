@@ -26,6 +26,8 @@ public class InventoryOnOFF : MonoBehaviour
                 Inventory.SetActive(true);
                 myPlayer.enabled = false;
                 myCam.enabled = false;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
             }
             else
             {
@@ -33,7 +35,8 @@ public class InventoryOnOFF : MonoBehaviour
                 status = 0;
                 myPlayer.enabled = true;
                 myCam.enabled = true;
-
+                Cursor.visible = false;
+                Cursor.lockState = CursorLockMode.Locked;
             }
         }
         
