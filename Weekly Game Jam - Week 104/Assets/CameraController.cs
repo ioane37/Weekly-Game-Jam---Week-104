@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        transform.position = player.position;
+        //transform.position = player.position;
 
         pitch -= Input.GetAxisRaw("Mouse Y") * sensetivity;
         yaw += Input.GetAxisRaw("Mouse X") * sensetivity;
