@@ -2,6 +2,13 @@
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] RectTransform staminaSlider = null;
+
+    [SerializeField] float maxStamina = 100f;
+    [SerializeField] float staminaUsagePerSecond = 20f;
+    [SerializeField] float staminaRegenSpeed = 20f;
+    [SerializeField] float staminaRegenSpeedWalking = 8f;
+
     [SerializeField] float walkSpeed = 5f;
     [SerializeField] float runSpeed = 10f;
 
@@ -9,17 +16,25 @@ public class PlayerController : MonoBehaviour
 
     Transform camTransform;
 
+    float stamina;
     float speed;
+
+    bool canRun = true;
 
     void Start()
     {
         characterController = GetComponent<CharacterController>();
         camTransform = Camera.main.transform;
+
+        stamina = maxStamina;
+        UpdateStamina();
     }
 
     void Update()
     {
-        speed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        bool running = Input.GetKey(KeyCode.LeftShift) ? canRun : false;
+
+        speed = running ? runSpeed : walkSpeed;
 
         Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
@@ -30,8 +45,44 @@ public class PlayerController : MonoBehaviour
 
         if (input != Vector3.zero)
         {
-            //transform.Translate((horizontalDir + verticalDir) * speed * Time.deltaTime);
+            if (running)
+            {
+                stamina -= staminaUsagePerSecond * Time.deltaTime;
+
+                UpdateStamina();
+            }
+
             characterController.SimpleMove((horizontalDir + verticalDir) * speed * Time.deltaTime);
         }
+
+        if(stamina < maxStamina)
+        {
+            if (input == Vector3.zero)
+            {
+                stamina = Mathf.MoveTowards(stamina, maxStamina, staminaRegenSpeed * Time.deltaTime);
+
+                if (stamina >= 30f)
+                    canRun = true;
+            }
+            else if (!running)
+            {
+                stamina = Mathf.MoveTowards(stamina, maxStamina, staminaRegenSpeedWalking * Time.deltaTime);
+
+                if (stamina >= 30f)
+                    canRun = true;
+            }
+
+            UpdateStamina();
+        }
+
+        if (stamina <= 0)
+            canRun = false;
+    }
+
+    private void UpdateStamina()
+    {
+        Vector3 newStamina = staminaSlider.localScale;
+        newStamina.x = stamina / 100f; //I Divede by 100, because to keep scale from 0 to 1
+        staminaSlider.localScale = newStamina;
     }
 }

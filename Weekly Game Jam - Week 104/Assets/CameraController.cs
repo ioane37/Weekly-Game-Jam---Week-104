@@ -2,8 +2,6 @@
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] Transform player = null;
-
     [SerializeField] float sensetivity = 10f;
 
     float pitch = 0;
