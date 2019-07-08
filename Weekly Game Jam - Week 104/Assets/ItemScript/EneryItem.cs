@@ -11,6 +11,8 @@ public class EneryItem : MonoBehaviour
  
     public GameObject PickUpAction;
     public GameObject Cursor;
+    public GameObject ObjectiveButton2;
+    public GameObject Item2;
 
     public Text Objective1;
  
@@ -37,6 +39,8 @@ public class EneryItem : MonoBehaviour
                     RepairSystem.EneryItem = true;
                     ActionText.text = "";
                     Destroy(this.gameObject);
+                    ObjectiveButton2.SetActive(true);
+                    Item2.SetActive(true);
                 }
             }
         }
@@ -44,7 +48,8 @@ public class EneryItem : MonoBehaviour
 
     private void OnMouseExit()
     {
-     
+        PickUpAction.SetActive(false);
+
         ActionText.GetComponent<Text>().text = "";
 
     }

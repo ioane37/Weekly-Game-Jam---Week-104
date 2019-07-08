@@ -17,6 +17,7 @@ public class RepairSystem : MonoBehaviour
     bool generatorFound = false;
     public static bool hasItem = false;
     public static bool EneryItem, Fuel, Tool = false;
+    public GameObject FinalPanel;
     void Awake()
     {
         cameraTransform = Camera.main.transform;
@@ -54,6 +55,7 @@ public class RepairSystem : MonoBehaviour
             {
                 if(EneryItem == true && Fuel == true && Tool == true)
                 {
+                    FinalPanel.SetActive(true);
                     hasItem = true;
                     if (hasItem)
                     {
@@ -86,9 +88,13 @@ public class RepairSystem : MonoBehaviour
                 }
                 else
                 {
+
                     repairText.gameObject.SetActive(true);
                     repairText.text = "Find More Tools";
+                                 
                 }
+
+               
 
 
             }

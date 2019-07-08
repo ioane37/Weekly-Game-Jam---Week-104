@@ -11,6 +11,8 @@ public class Tool : MonoBehaviour
 
     public GameObject PickUpAction;
     public GameObject Cursor;
+    public GameObject ObjectiveButton3;
+    public GameObject Item3;
 
     public Text Objective2;
 
@@ -37,6 +39,8 @@ public class Tool : MonoBehaviour
                     RepairSystem.Tool = true;
                     ActionText.text = "";
                     Destroy(this.gameObject);
+                    ObjectiveButton3.SetActive(true);
+                    Item3.SetActive(true);
                 }
             }
         }
@@ -44,7 +48,8 @@ public class Tool : MonoBehaviour
 
     private void OnMouseExit()
     {
-        
+        PickUpAction.SetActive(false);
+
         ActionText.GetComponent<Text>().text = "";
 
     }
