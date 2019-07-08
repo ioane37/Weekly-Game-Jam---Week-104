@@ -24,7 +24,7 @@ public class EnemyAI : MonoBehaviour
 
     private void ChasePlayer()
     {
-
+        
     }
 
     private void AttackPlayer()
