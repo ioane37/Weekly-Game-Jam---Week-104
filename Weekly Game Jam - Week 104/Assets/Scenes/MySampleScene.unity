@@ -172,6 +172,7 @@ MonoBehaviour:
   staminaRegenSpeedWalking: 8
   walkSpeed: 300
   runSpeed: 700
+  runSpeedLowStamina: 500
 --- !u!143 &302897447
 CharacterController:
   m_ObjectHideFlags: 0
