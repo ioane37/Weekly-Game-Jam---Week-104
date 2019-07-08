@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         bool running = Input.GetKey(KeyCode.LeftShift) ? canRun : false;
 
         speed = running ? currentRunSpeed : walkSpeed;
-        Debug.Log(currentRunSpeed);
+
         Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
         Vector3 horizontalDir = camTransform.right * input.x;
