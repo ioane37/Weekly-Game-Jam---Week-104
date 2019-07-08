@@ -9,8 +9,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float staminaRegenSpeed = 20f;
     [SerializeField] float staminaRegenSpeedWalking = 8f;
 
-    [SerializeField] float walkSpeed = 5f;
-    [SerializeField] float runSpeed = 10f;
+    [SerializeField] float walkSpeed = 300f;
+    [SerializeField] float runSpeed = 7000f;
+    [SerializeField] float runSpeedLowStamina = 500f;
 
     CharacterController characterController;
 
@@ -18,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     float stamina;
     float speed;
+    float currentRunSpeed;
 
     bool canRun = true;
 
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         camTransform = Camera.main.transform;
+
+        currentRunSpeed = runSpeed;
 
         stamina = maxStamina;
         UpdateStamina();
@@ -34,8 +38,8 @@ public class PlayerController : MonoBehaviour
     {
         bool running = Input.GetKey(KeyCode.LeftShift) ? canRun : false;
 
-        speed = running ? runSpeed : walkSpeed;
-
+        speed = running ? currentRunSpeed : walkSpeed;
+        Debug.Log(currentRunSpeed);
         Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
 
         Vector3 horizontalDir = camTransform.right * input.x;
@@ -60,23 +64,29 @@ public class PlayerController : MonoBehaviour
             if (input == Vector3.zero)
             {
                 stamina = Mathf.MoveTowards(stamina, maxStamina, staminaRegenSpeed * Time.deltaTime);
-
-                if (stamina >= 30f)
-                    canRun = true;
             }
             else if (!running)
             {
                 stamina = Mathf.MoveTowards(stamina, maxStamina, staminaRegenSpeedWalking * Time.deltaTime);
+            }
 
-                if (stamina >= 30f)
-                    canRun = true;
+            if (stamina >= 30f)
+            {
+                canRun = true;
+
+                currentRunSpeed = runSpeed;
             }
 
             UpdateStamina();
         }
 
+        if(stamina <= 30f)
+            currentRunSpeed = runSpeedLowStamina;
+
         if (stamina <= 0)
+        {
             canRun = false;
+        }
     }
 
     private void UpdateStamina()
