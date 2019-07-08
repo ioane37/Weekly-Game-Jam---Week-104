@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Fuel
+  - Patrol Area
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - 
   - Generator
-  - 
+  - Player
   - 
   - 
   - 
