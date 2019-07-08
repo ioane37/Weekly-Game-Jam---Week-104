@@ -11,7 +11,7 @@ public class Fuel : MonoBehaviour
 
     public GameObject PickUpAction;
     public GameObject Cursor;
-
+    public GameObject[] ObjectivePanel;
     public Text Objective3;
 
     void Update()
@@ -37,6 +37,11 @@ public class Fuel : MonoBehaviour
                     RepairSystem.Fuel = true;
                     ActionText.text = "";
                     Destroy(this.gameObject);
+                    ObjectivePanel[3].SetActive(true);
+                    ObjectivePanel[0].SetActive(false);
+                    ObjectivePanel[1].SetActive(false);
+                    ObjectivePanel[2].SetActive(false);
+
                 }
             }
         }
