@@ -13,9 +13,10 @@ public class RepairSystem : MonoBehaviour
     [SerializeField] float repairSpeed = 0.001f;
 
     Transform cameraTransform;
-
+    public  CameraController cam;
     bool generatorFound = false;
-
+    public static bool hasItem = false;
+    public static bool EneryItem, Fuel, Tool = false;
     void Awake()
     {
         cameraTransform = Camera.main.transform;
@@ -51,27 +52,45 @@ public class RepairSystem : MonoBehaviour
 
             if (!generator.Repaired)
             {
-                //If player has everything
-                repairText.gameObject.SetActive(true);
-                repairText.text = "Press Mouse 1 To Start Repairing";
-                //Else
-                //repairText.text = "Find More Tools";
-
-                if (Input.GetMouseButton(0) /*TODO And Have All Tools*/)
+                if(EneryItem == true && Fuel == true && Tool == true)
                 {
-                    repairText.text = "";
-                    repairText.gameObject.SetActive(false);
-
-                    RepairGenerator(generator);
-                }
-
-                if (Input.GetMouseButtonUp(0))
-                {
-                    if (repairSlider.gameObject.activeSelf)
+                    hasItem = true;
+                    if (hasItem)
                     {
-                        repairSlider.gameObject.SetActive(false);
+                        //If player has everything
+                        repairText.gameObject.SetActive(true);
+                        repairText.text = "Press Mouse 1 To Start Repairing";
+                        //Else
+
+
+                        if (Input.GetMouseButton(0) /*TODO And Have All Tools*/)
+                        {
+                            cam.enabled = false;
+                            repairText.text = "";
+                            repairText.gameObject.SetActive(false);
+
+                            RepairGenerator(generator);
+                        }
+
+                        if (Input.GetMouseButtonUp(0))
+                        {
+                            
+
+                            if (repairSlider.gameObject.activeSelf)
+                            {
+                                repairSlider.gameObject.SetActive(false);
+                            }
+                        }
                     }
+                    
                 }
+                else
+                {
+                    repairText.gameObject.SetActive(true);
+                    repairText.text = "Find More Tools";
+                }
+
+
             }
             else
             {
@@ -79,6 +98,7 @@ public class RepairSystem : MonoBehaviour
                     repairText.gameObject.SetActive(true);
 
                 repairText.text = "Generator Repaired!";
+                cam.enabled = true;
             }
         }
     }
