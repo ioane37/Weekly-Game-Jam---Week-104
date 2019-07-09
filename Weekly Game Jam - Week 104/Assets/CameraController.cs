@@ -17,8 +17,8 @@ public class CameraController : MonoBehaviour
     {
         //transform.position = player.position;
 
-        pitch -= Input.GetAxisRaw("Mouse Y") * sensetivity * Time.deltaTime;
-        yaw += Input.GetAxisRaw("Mouse X") * sensetivity * Time.deltaTime;
+        pitch -= Input.GetAxisRaw("Mouse Y") * sensetivity;
+        yaw += Input.GetAxisRaw("Mouse X") * sensetivity;
 
         pitch = Mathf.Clamp(pitch, -80f, 85f);
 
