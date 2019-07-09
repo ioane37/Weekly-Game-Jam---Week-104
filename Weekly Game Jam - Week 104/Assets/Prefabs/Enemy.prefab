@@ -84,7 +84,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   viewDistance: 10
   attackRadius: 2.5
-  chaseRadius: 10
+  chaseRadius: 15
   checkRadius: 2
   rotationSpeed: 100
   damageAmount: 30
@@ -145,10 +145,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 143876465919497922, guid: f95d1a9483a8c6a4496c281ffd93702c, type: 3}
-    - {fileID: 114082707841853144, guid: f95d1a9483a8c6a4496c281ffd93702c, type: 3}
-    - {fileID: 95825326649134560, guid: f95d1a9483a8c6a4496c281ffd93702c, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f95d1a9483a8c6a4496c281ffd93702c, type: 3}
 --- !u!4 &5813314247655046468 stripped
 Transform:
