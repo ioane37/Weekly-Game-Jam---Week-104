@@ -11,7 +11,7 @@ public class EnemyAI : MonoBehaviour
 
     [SerializeField] float rotationSpeed = 100f;
 
-    [SerializeField] int damageAmount = 30;
+    [SerializeField] float damageAmount = 30f;
     [SerializeField] float damageCooldown = 2f;
 
     [SerializeField] float dwellDuration = 1.5f;

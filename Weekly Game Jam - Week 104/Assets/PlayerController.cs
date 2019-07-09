@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IRegenerate
 {
     [SerializeField] RectTransform staminaSlider = null;
 
@@ -63,11 +63,11 @@ public class PlayerController : MonoBehaviour
         {
             if (input == Vector3.zero)
             {
-                stamina = Mathf.MoveTowards(stamina, maxStamina, staminaRegenSpeed * Time.deltaTime);
+                stamina = Regenerate(stamina, maxStamina, staminaRegenSpeed * Time.deltaTime);
             }
             else if (!running)
             {
-                stamina = Mathf.MoveTowards(stamina, maxStamina, staminaRegenSpeedWalking * Time.deltaTime);
+                stamina = Regenerate(stamina, maxStamina, staminaRegenSpeedWalking * Time.deltaTime);
             }
 
             if (stamina >= 30f)
@@ -87,6 +87,11 @@ public class PlayerController : MonoBehaviour
         {
             canRun = false;
         }
+    }
+
+    public float Regenerate(float valueToRegenerate, float maxAmount, float regenSpeed)
+    {
+        return Mathf.MoveTowards(valueToRegenerate, maxAmount, regenSpeed);
     }
 
     private void UpdateStamina()
