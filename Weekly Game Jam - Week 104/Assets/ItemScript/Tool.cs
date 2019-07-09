@@ -49,6 +49,7 @@ public class Tool : MonoBehaviour
     private void OnMouseExit()
     {
         PickUpAction.SetActive(false);
+        Cursor.SetActive(true);
 
         ActionText.GetComponent<Text>().text = "";
 
