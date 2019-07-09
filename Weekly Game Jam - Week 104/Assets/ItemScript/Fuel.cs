@@ -50,7 +50,8 @@ public class Fuel : MonoBehaviour
     private void OnMouseExit()
     {
 
-     
+        Cursor.SetActive(true);
+
         ActionText.GetComponent<Text>().text = "";
 
     }
