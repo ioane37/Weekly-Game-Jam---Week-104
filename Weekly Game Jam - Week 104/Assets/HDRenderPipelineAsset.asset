@@ -9,20 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 0cf1dab834d4ec34195b920ea7bbf9ec, type: 3}
   m_Name: HDRenderPipelineAsset
   m_EditorClassIdentifier: 
   m_RenderPipelineResources: {fileID: 11400000, guid: 3ce144cff5783da45aa5d4fdc2da14b7,
     type: 2}
-  m_RenderPipelineEditorResources: {fileID: 11400000, guid: bf65aa0c6e3e70c4c8b484c4ddac473e,
-    type: 2}
   m_RenderingPathDefaultCameraFrameSettings:
-    bitDatas: {}
+    bitDatas:
+      data1: 69284256022301
+      data2: 4539628424389459968
   m_RenderingPathDefaultBakedOrCustomReflectionFrameSettings:
-    bitDatas: {}
+    bitDatas:
+      data1: 64881914049309
+      data2: 4539628424389459968
   m_RenderingPathDefaultRealtimeReflectionFrameSettings:
-    bitDatas: {}
-  <frameSettingsHistory>k__BackingField: 0
+    bitDatas:
+      data1: 69279803252509
+      data2: 4539628424389459968
   m_RenderPipelineSettings:
     supportShadowMask: 1
     supportSSR: 0
@@ -36,7 +39,6 @@ MonoBehaviour:
     supportTransparentBackface: 1
     supportTransparentDepthPrepass: 1
     supportTransparentDepthPostpass: 1
-    supportLowResTransparent: 1
     colorBufferFormat: 74
     supportedLitShaderMode: 2
     supportDecals: 1
@@ -58,6 +60,7 @@ MonoBehaviour:
       planarReflectionCacheCompressed: 0
       skyReflectionSize: 256
       skyLightingOverrideLayerMask:
+        serializedVersion: 2
         m_Bits: 0
       supportFabricConvolution: 0
       maxDirectionalLightsOnScreen: 16
@@ -93,16 +96,11 @@ MonoBehaviour:
       upsampleFilter: 1
       forceResolution: 0
       forcedPercentage: 100
-    lowresTransparentSettings:
-      enabled: 1
-      checkerboardDepthBuffer: 1
-      upsampleType: 1
   allowShaderVariantStripping: 1
   enableSRPBatcher: 1
   shaderVariantLogLevel: 0
   diffusionProfileSettings: {fileID: 0}
   diffusionProfileSettingsList: []
-  defineArray: []
   m_Version: 5
   m_ObsoleteFrameSettings:
     overrides: 0
