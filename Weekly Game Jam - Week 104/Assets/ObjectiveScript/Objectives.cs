@@ -15,9 +15,10 @@ public class Objectives : MonoBehaviour
     public GameObject ObjectiveButton1;
     public GameObject ObjectiveButton2;
     public GameObject ObjectiveButton3;
-    public AudioSource open;
-    public int status;
 
+    public int status;
+    public  PlayerController myPlayer;
+    public CameraController myCam;
 
 
     private void Update()
@@ -28,19 +29,11 @@ public class Objectives : MonoBehaviour
             {
                 status = 1;
                 OpenQuestPanel.SetActive(true);
-                open.Play();
+                myPlayer.enabled = false;
+                myCam.enabled = false;
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
-            else
-            {
-                open.Stop();
-                status = 0;
-                OpenQuestPanel.SetActive(false);
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
-            }
-  
         }
     }
 
@@ -48,7 +41,8 @@ public class Objectives : MonoBehaviour
     {
         status = 0;
         OpenQuestPanel.SetActive(false);
-     
+        myPlayer.enabled = true;
+        myCam.enabled = true;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }

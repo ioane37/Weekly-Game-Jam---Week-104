@@ -50,7 +50,6 @@ public class EneryItem : MonoBehaviour
     {
         PickUpAction.SetActive(false);
 
-        Cursor.SetActive(true);
         ActionText.GetComponent<Text>().text = "";
 
     }
