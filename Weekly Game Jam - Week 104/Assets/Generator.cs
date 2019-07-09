@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
+using UnityEngine.Playables;
 using System.Collections.Generic;
 
 public class Generator : MonoBehaviour
 {
+    [SerializeField] PlayableDirector doorCutscene = null;
     [SerializeField] AudioClip repairedAudio = null;
 
     //TODO Make class item
@@ -23,5 +25,8 @@ public class Generator : MonoBehaviour
 
         audioSource.clip = repairedAudio;
         audioSource.Play();
+
+        //Playing Door Cutscene
+        doorCutscene.Play();
     }
 }
