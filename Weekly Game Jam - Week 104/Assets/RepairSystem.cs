@@ -126,6 +126,8 @@ public class RepairSystem : MonoBehaviour
 
             generator.Repaired = true;
 
+            generator.Activate();
+
             //generator.gameObject.layer = LayerMask.NameToLayer("Default");
         }
     }
