@@ -13,6 +13,7 @@ public class Fuel : MonoBehaviour
     public GameObject Cursor;
     public GameObject[] ObjectivePanel;
     public Text Objective3;
+    public Button[] Buttons;
 
     void Update()
     {
@@ -41,6 +42,9 @@ public class Fuel : MonoBehaviour
                     ObjectivePanel[0].SetActive(false);
                     ObjectivePanel[1].SetActive(false);
                     ObjectivePanel[2].SetActive(false);
+                    Buttons[0].interactable = false;
+                    Buttons[1].interactable = false;
+                    Buttons[2].interactable = false;
 
                 }
             }
@@ -50,7 +54,8 @@ public class Fuel : MonoBehaviour
     private void OnMouseExit()
     {
 
-     
+        Cursor.SetActive(true);
+
         ActionText.GetComponent<Text>().text = "";
 
     }
