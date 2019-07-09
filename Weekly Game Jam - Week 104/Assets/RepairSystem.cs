@@ -67,7 +67,6 @@ public class RepairSystem : MonoBehaviour
 
                         if (Input.GetMouseButton(0) /*TODO And Have All Tools*/)
                         {
-                            cam.enabled = false;
                             repairText.text = "";
                             repairText.gameObject.SetActive(false);
 
@@ -104,7 +103,6 @@ public class RepairSystem : MonoBehaviour
                     repairText.gameObject.SetActive(true);
 
                 repairText.text = "Generator Repaired!";
-                cam.enabled = true;
             }
         }
     }
