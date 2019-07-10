@@ -9,6 +9,13 @@ TagManager:
   - Canvas
   - Enemy
   - Generator
+  - StartGame
+  - Options
+  - Credits
+  - Logo
+  - Button
+  - Anywhere
+  - QuitGame
   layers:
   - Default
   - TransparentFX
