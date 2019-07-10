@@ -12,6 +12,7 @@ public class MenuControls : MonoBehaviour
      GameObject button;
      GameObject clickAnywhere;
     GameObject QuitGame;
+    MenuControls menu;
     [SerializeField] GameObject LoadingGame;
 
     // Start is called before the first frame update
@@ -52,6 +53,7 @@ public class MenuControls : MonoBehaviour
     public void NewGame()
     {
         LoadingGame.SetActive(true);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1); 
+        menu.GetComponent<AudioSource>().Stop();
     }
 }

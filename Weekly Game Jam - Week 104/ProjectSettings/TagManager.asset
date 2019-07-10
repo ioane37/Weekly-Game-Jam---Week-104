@@ -16,6 +16,7 @@ TagManager:
   - Button
   - Anywhere
   - QuitGame
+  - Cover
   layers:
   - Default
   - TransparentFX
