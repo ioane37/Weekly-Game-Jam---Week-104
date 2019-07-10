@@ -82,11 +82,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e86ed2b1d5e0d2f4285e4e7ff8de24de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewDistance: 10
+  viewDistance: 1000
   attackRadius: 2.5
-  chaseRadius: 15
-  checkRadius: 2
-  rotationSpeed: 100
+  chaseRadius: 8
+  checkRadius: 3
+  rotationSpeed: 10
   damageAmount: 30
   damageCooldown: 2
   dwellDuration: 1.5

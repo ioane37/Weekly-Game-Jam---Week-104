@@ -4079,7 +4079,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 16e774b5fbf024c42b37a4d8ef60bf68, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e0ff6ba4b01d76a48a2d70716f631724, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4191,6 +4191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9687218d94cfb534ba50979c03a92963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundAudioClips:
+  - soundType: 1
+    audioClip: {fileID: 8300000, guid: e0ff6ba4b01d76a48a2d70716f631724, type: 3}
+  - soundType: 0
+    audioClip: {fileID: 8300000, guid: 321afabd0ee41c6499358f8ea90bc7a4, type: 3}
 --- !u!4 &990975038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4198195060786464, guid: 41849f19442adff4a951d0ff9430516c,
@@ -5363,8 +5368,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231450354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.821, y: 1.12, z: -3.791}
-  m_LocalScale: {x: 1, y: 3.0348, z: 1}
+  m_LocalPosition: {x: 5.821, y: 2.15, z: -3.791}
+  m_LocalScale: {x: 1, y: 5, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -8668,36 +8673,6 @@ PrefabInstance:
     - target: {fileID: 5810419491479807467, guid: 1b9c2f692a44fab46aa2f480c7cda820,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5810419491479807440, guid: 1b9c2f692a44fab46aa2f480c7cda820,
-        type: 3}
-      propertyPath: checkRadius
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5810419491479807440, guid: 1b9c2f692a44fab46aa2f480c7cda820,
-        type: 3}
-      propertyPath: rotationSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5810419491479807440, guid: 1b9c2f692a44fab46aa2f480c7cda820,
-        type: 3}
-      propertyPath: chaseClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 321afabd0ee41c6499358f8ea90bc7a4, type: 3}
-    - target: {fileID: 5810419491479807440, guid: 1b9c2f692a44fab46aa2f480c7cda820,
-        type: 3}
-      propertyPath: defaultClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 16e774b5fbf024c42b37a4d8ef60bf68, type: 3}
-    - target: {fileID: 5810419491479807440, guid: 1b9c2f692a44fab46aa2f480c7cda820,
-        type: 3}
-      propertyPath: viewDistance
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5810419491479807440, guid: 1b9c2f692a44fab46aa2f480c7cda820,
-        type: 3}
-      propertyPath: offset.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
