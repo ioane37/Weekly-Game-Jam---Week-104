@@ -21,6 +21,8 @@ public class EnemyAI : MonoBehaviour
 
     NavMeshAgent agent = null;
 
+    Animator animator = null;
+
     PlayerHealth player = null;
 
     float currentDamageCooldown;
@@ -44,6 +46,7 @@ public class EnemyAI : MonoBehaviour
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
 
         player = FindObjectOfType<PlayerHealth>();
 
