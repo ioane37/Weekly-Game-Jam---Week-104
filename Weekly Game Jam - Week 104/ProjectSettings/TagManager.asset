@@ -9,6 +9,7 @@ TagManager:
   - Canvas
   - Enemy
   - Generator
+  - Cover
   layers:
   - Default
   - TransparentFX
