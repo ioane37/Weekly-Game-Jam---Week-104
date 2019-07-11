@@ -4,13 +4,10 @@ using System.Collections;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] AudioClip chaseClip = null;
-    [SerializeField] AudioClip defaultClip = null;
-
-    [SerializeField] float viewDistance = 100f;
+    [SerializeField] float viewDistance = 1000f;
     [SerializeField] float attackRadius = 2.5f;
-    [SerializeField] float chaseRadius = 5f;
-    [SerializeField] float checkRadius = 2f;
+    [SerializeField] float chaseRadius = 8f;
+    [SerializeField] float checkRadius = 3f;
 
     [SerializeField] float rotationSpeed = 10f;
 
@@ -23,6 +20,8 @@ public class EnemyAI : MonoBehaviour
     Transform generator = null;
 
     NavMeshAgent agent = null;
+
+    Animator animator = null;
 
     PlayerHealth player = null;
 
@@ -39,8 +38,7 @@ public class EnemyAI : MonoBehaviour
         Patrolling,
         Chasing,
         Attacking,
-        Checking,
-        SearchingForPlayer
+        Checking
     };
 
     State state = State.Patrolling;
@@ -48,6 +46,7 @@ public class EnemyAI : MonoBehaviour
     void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
 
         player = FindObjectOfType<PlayerHealth>();
 
@@ -66,7 +65,7 @@ public class EnemyAI : MonoBehaviour
         else if (state == State.Chasing)
         {
             Chase();
-            AudioManager.Instance.ChangeMusic(chaseClip);
+            AudioManager.Instance.ChangeMusic(AudioManager.SoundType.Chasing);
         }
         else if (state == State.Attacking)
         {
@@ -85,7 +84,12 @@ public class EnemyAI : MonoBehaviour
 
     private void FoundPlayer()
     {
-        RaycastHit[] raycastHits = Physics.RaycastAll(transform.position, transform.forward, viewDistance);
+        Vector3 direction = player.transform.position - transform.position;
+
+        if (state != State.Chasing)
+            direction = transform.forward;
+
+        RaycastHit[] raycastHits = Physics.RaycastAll(transform.position, direction, viewDistance);
 
         int playerIndex = -1;
         int coverIndex = -1;
@@ -95,13 +99,9 @@ public class EnemyAI : MonoBehaviour
             Transform hitTranform = raycastHits[i].transform;
 
             if (hitTranform.CompareTag("Cover"))
-            {
                 coverIndex = i;
-            }
             if (hitTranform.CompareTag("Player"))
-            {
                 playerIndex = i;
-            }
         }
 
         if(playerIndex == -1)
@@ -116,17 +116,13 @@ public class EnemyAI : MonoBehaviour
         if (coverIndex < playerIndex && playerNotNear && coverIndex != -1)
         {
             state = State.Patrolling;
-            Debug.Log("Player Hidden");
 
-            state = State.SearchingForPlayer;
-
-            AudioManager.Instance.ChangeMusic(defaultClip);
+            AudioManager.Instance.ChangeMusic(AudioManager.SoundType.Background);
 
             playerFound = false;
         }
         else
         {
-            Debug.Log("Player Not Hidden");
             playerFound = true;
         }
     }
@@ -135,7 +131,7 @@ public class EnemyAI : MonoBehaviour
     {
         FaceTo(generator.position);
 
-        //TODO Playe Check Animation
+        //TODO Play Check Animation
         if (FacingTo(generator.position))
         {
             state = State.Patrolling;
@@ -162,7 +158,7 @@ public class EnemyAI : MonoBehaviour
     {
         float distanceBetweeenPlayer = Vector3.Distance(transform.position, player.transform.position);
 
-        if (distanceBetweeenPlayer <= chaseRadius && playerFound)
+        if (playerFound)
         {
             state = State.Chasing;
 
