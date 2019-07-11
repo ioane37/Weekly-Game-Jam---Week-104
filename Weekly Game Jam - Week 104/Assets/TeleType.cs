@@ -7,7 +7,7 @@ public class TeleType : MonoBehaviour
 {
 
     [SerializeField] Text text;
-    [SerializeField] GameObject button;
+    [SerializeField] GameObject[] button;
 
     // Start is called before the first frame update
     void Start()
@@ -47,7 +47,8 @@ public class TeleType : MonoBehaviour
         yield return new WaitForSeconds(1f);
         text.text = "";
      
-        button.SetActive(true);
+        button[0].SetActive(true);
+        button[1].SetActive(true);
     
         
     }
