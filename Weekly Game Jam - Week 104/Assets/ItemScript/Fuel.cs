@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Fuel : MonoBehaviour
 {
+    public GameObject destoroyedFloor = null;
 
     public float TheDistance;
 
@@ -46,6 +47,8 @@ public class Fuel : MonoBehaviour
                     Buttons[1].interactable = false;
                     Buttons[2].interactable = false;
 
+
+                    destoroyedFloor.SetActive(false);
                 }
             }
         }
