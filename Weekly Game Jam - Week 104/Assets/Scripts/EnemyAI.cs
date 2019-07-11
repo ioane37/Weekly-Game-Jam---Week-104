@@ -228,10 +228,12 @@ public class EnemyAI : MonoBehaviour
 
         if (distanceBetweeenPlayer > attackRadius && distanceBetweeenPlayer <= chaseRadius)
         {
+            Debug.Log("HERE");
             state = State.Chasing;
         }
         else if (distanceBetweeenPlayer > chaseRadius && !FacingTo(player.transform.position))
         {
+            Debug.Log("PATROL");
             state = State.Patrolling;
         }
     }
@@ -243,14 +245,14 @@ public class EnemyAI : MonoBehaviour
 
     private void Chase()
     {
-        agent.SetDestination(player.transform.position);
-
-        animator.SetTrigger("walk");
-
         if (Vector3.Distance(transform.position, player.transform.position) <= attackRadius && playerFound)
         {
             state = State.Attacking;
         }
+
+        agent.SetDestination(player.transform.position);
+
+        animator.SetTrigger("walk");
     }
 
     private int GetTargetPatrolPointIndex()

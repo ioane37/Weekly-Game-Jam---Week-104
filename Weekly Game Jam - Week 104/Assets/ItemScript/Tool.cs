@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Tool : MonoBehaviour
 {
+    [SerializeField] GameObject destoroyedFloor = null;
 
     public float TheDistance;
 
@@ -41,6 +42,8 @@ public class Tool : MonoBehaviour
                     Destroy(this.gameObject);
                     ObjectiveButton3.SetActive(true);
                     Item3.SetActive(true);
+
+                    destoroyedFloor.SetActive(false);
                 }
             }
         }
