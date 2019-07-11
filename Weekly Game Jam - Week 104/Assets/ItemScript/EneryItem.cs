@@ -27,7 +27,7 @@ public class EneryItem : MonoBehaviour
         {
             Cursor.SetActive(false);
             PickUpAction.SetActive(true);
-            ActionText.text = "Get the Enery Item";
+            ActionText.text = "Collect Enery from this machine";
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if(TheDistance <= 3)

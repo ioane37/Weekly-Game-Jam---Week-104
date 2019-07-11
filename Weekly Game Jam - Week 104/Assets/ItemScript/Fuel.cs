@@ -26,7 +26,7 @@ public class Fuel : MonoBehaviour
         {
             Cursor.SetActive(false);
             PickUpAction.SetActive(true);
-            ActionText.text = "Get the Fuel Item";
+            ActionText.text = "Get the Fuel to start the engine of the generator";
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (TheDistance <= 3)
@@ -53,6 +53,7 @@ public class Fuel : MonoBehaviour
 
     private void OnMouseExit()
     {
+
         PickUpAction.SetActive(false);
 
         Cursor.SetActive(true);
