@@ -30,6 +30,11 @@ public class AudioManager : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
+    public void StopPlaying()
+    {
+        audioSource.Stop();
+    }
+
     public void ChangeMusic(SoundType soundType)
     { 
         AudioClip targetClip = soundAudioClips.Where(o => o.soundType == soundType).Select(o => o.audioClip).First();

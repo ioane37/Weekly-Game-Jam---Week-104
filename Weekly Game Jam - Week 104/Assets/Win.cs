@@ -13,7 +13,7 @@ public class Win : MonoBehaviour
 
             other.GetComponent<PlayerController>().enabled = false;
 
-            AudioManager.Instance.ChangeMusic(AudioManager.SoundType.Background);
+            AudioManager.Instance.StopPlaying();
         }
     }
 }

@@ -28,6 +28,8 @@ public class Generator : MonoBehaviour
         audioSource.clip = repairedAudio;
         audioSource.Play();
 
+        AudioManager.Instance.StopPlaying();
+
         //Playing Door Cutscene
         doorCutscene.Play();
 
