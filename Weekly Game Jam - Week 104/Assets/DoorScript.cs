@@ -36,7 +36,9 @@ public class DoorScript : MonoBehaviour
                     status = 1;
                     leftDoor.GetComponent<Animation>().Play("LeftDoor");
                     rightDoor.GetComponent<Animation>().Play("RightDoor");
-                  
+
+
+                    GetComponent<BoxCollider>().enabled = false;
                 }
                 else
                 {
