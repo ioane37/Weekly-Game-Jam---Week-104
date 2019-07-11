@@ -53,6 +53,7 @@ public class Fuel : MonoBehaviour
 
     private void OnMouseExit()
     {
+        PickUpAction.SetActive(false);
 
         Cursor.SetActive(true);
 
