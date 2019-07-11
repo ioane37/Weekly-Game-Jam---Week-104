@@ -12,6 +12,8 @@ public class Win : MonoBehaviour
             winUI.SetActive(true);
 
             other.GetComponent<PlayerController>().enabled = false;
+
+            AudioManager.Instance.ChangeMusic(AudioManager.SoundType.Background);
         }
     }
 }
