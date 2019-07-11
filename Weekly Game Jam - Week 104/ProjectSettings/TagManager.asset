@@ -19,6 +19,7 @@ TagManager:
   - Cover
   - LeftDoor
   - RightDoor
+  - Player Collider
   layers:
   - Default
   - TransparentFX
