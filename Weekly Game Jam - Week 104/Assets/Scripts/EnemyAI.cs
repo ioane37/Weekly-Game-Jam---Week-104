@@ -82,6 +82,24 @@ public class EnemyAI : MonoBehaviour
         FoundPlayer();
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player Collider") && !playerFound && !FacingTo(player.transform.position))
+        {
+            Debug.Log("HAHAAHAHAHAHAHAH");
+        }
+    }
+
+    public void DealDamage()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position) > chaseRadius)
+            return;
+
+        player.TakeDamage(damageAmount);
+
+        currentDamageCooldown = Time.time + damageCooldown;
+    }
+
     private void FoundPlayer()
     {
         Vector3 direction = player.transform.position - transform.position;
@@ -185,20 +203,22 @@ public class EnemyAI : MonoBehaviour
 
         if (canAttack && facingToPlayer)
         {
-            player.TakeDamage(damageAmount);
-
-            currentDamageCooldown = Time.time + damageCooldown;
+            animator.SetTrigger("attack");
         }
         else if (!facingToPlayer)
         {
             FaceTo(player.transform.position);
-        }
 
-        if (distanceBetweeenPlayer <= chaseRadius)
+            animator.SetTrigger("idle");
+        }
+        else
+            animator.SetTrigger("idle");
+
+        if (distanceBetweeenPlayer > attackRadius && distanceBetweeenPlayer <= chaseRadius)
         {
             state = State.Chasing;
         }
-        else if (!FacingTo(player.transform.position))
+        else if (distanceBetweeenPlayer > chaseRadius && !FacingTo(player.transform.position))
         {
             state = State.Patrolling;
         }
@@ -212,6 +232,8 @@ public class EnemyAI : MonoBehaviour
     private void Chase()
     {
         agent.SetDestination(player.transform.position);
+
+        animator.SetTrigger("walk");
 
         if (Vector3.Distance(transform.position, player.transform.position) <= attackRadius && playerFound)
         {
@@ -248,10 +270,14 @@ public class EnemyAI : MonoBehaviour
                 state = State.Checking;
             }
 
+            animator.SetTrigger("idle");
+
             yield return new WaitForSecondsRealtime(dwellDuration);
         }
 
         agent.SetDestination(patrolArea.GetChild(GetTargetPatrolPointIndex()).position);
+
+        animator.SetTrigger("walk");    
     }
 
     void OnDrawGizmosSelected()
