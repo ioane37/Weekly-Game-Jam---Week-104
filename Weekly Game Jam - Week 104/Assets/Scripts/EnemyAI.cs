@@ -38,7 +38,8 @@ public class EnemyAI : MonoBehaviour
         Patrolling,
         Chasing,
         Attacking,
-        Checking
+        Checking,
+        LookingForPlayer
     };
 
     State state = State.Patrolling;
@@ -71,9 +72,18 @@ public class EnemyAI : MonoBehaviour
         {
             Attack();
         }
-        else
+        else if(state == State.Checking)
         {
             CheckGenerator();
+        }
+        else
+        {
+            Vector3 targetDir = player.transform.position - transform.position;
+
+            Vector3 newDir = Vector3.RotateTowards(transform.forward, targetDir, rotationSpeed * Time.deltaTime, 0.0f);
+            transform.rotation = Quaternion.LookRotation(newDir);
+
+            CheckSetState();
         }
     }
 
@@ -86,7 +96,9 @@ public class EnemyAI : MonoBehaviour
     {
         if(other.CompareTag("Player Collider") && !playerFound && !FacingTo(player.transform.position))
         {
-            Debug.Log("HAHAAHAHAHAHAHAH");
+            animator.SetTrigger("idle");
+
+            state = State.LookingForPlayer;
         }
     }
 

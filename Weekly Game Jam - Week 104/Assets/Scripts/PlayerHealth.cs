@@ -20,7 +20,7 @@ public class PlayerHealth : MonoBehaviour, IRegenerate
 
     void Update()
     {
-        if(health < maxHealth)
+        if(health < maxHealth && Alive)
         {
             health = Regenerate(health, maxHealth, regenSpeed * Time.deltaTime);
 
@@ -54,7 +54,7 @@ public class PlayerHealth : MonoBehaviour, IRegenerate
 
     private IEnumerator Die()
     {
-        Debug.Log("Uh Dying");
+        Alive = false;
 
         yield return new WaitForSecondsRealtime(2f);
 
