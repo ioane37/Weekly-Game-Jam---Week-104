@@ -4,6 +4,10 @@ public class PlayerController : MonoBehaviour, IRegenerate
 {
     [SerializeField] RectTransform staminaSlider = null;
 
+    [SerializeField] float gravity = -2f;
+
+    [SerializeField] float jumpHeight = 0.05f;
+
     [SerializeField] float maxStamina = 100f;
     [SerializeField] float staminaUsagePerSecond = 20f;
     [SerializeField] float staminaRegenSpeed = 20f;
@@ -21,6 +25,8 @@ public class PlayerController : MonoBehaviour, IRegenerate
     float speed;
     float currentRunSpeed;
 
+    float velocityY;
+
     bool canRun = true;
 
     void Start()
@@ -36,6 +42,13 @@ public class PlayerController : MonoBehaviour, IRegenerate
 
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Space) && characterController.isGrounded)
+        {
+            float jumpVelocity = Mathf.Sqrt(-2 * gravity * jumpHeight);
+
+            velocityY = jumpVelocity;
+        }
+
         bool running = Input.GetKey(KeyCode.LeftShift) ? canRun : false;
 
         speed = running ? currentRunSpeed : walkSpeed;
@@ -44,6 +57,13 @@ public class PlayerController : MonoBehaviour, IRegenerate
 
         Vector3 horizontalDir = camTransform.right * input.x;
         Vector3 verticalDir = camTransform.forward * input.z;
+
+        horizontalDir.y = 0;
+        verticalDir.y = 0;
+
+        velocityY += gravity * Time.deltaTime;
+
+        Vector3 findalDir = horizontalDir + verticalDir;
 
         verticalDir.y = 0;
 
@@ -55,11 +75,14 @@ public class PlayerController : MonoBehaviour, IRegenerate
 
                 UpdateStamina();
             }
-
-            characterController.SimpleMove((horizontalDir + verticalDir) * speed * Time.deltaTime);
         }
 
-        if(stamina < maxStamina)
+        characterController.Move((findalDir * speed * Time.deltaTime) + Vector3.up * velocityY);
+
+        if (characterController.isGrounded)
+            velocityY = 0;
+
+        if (stamina < maxStamina)
         {
             if (input == Vector3.zero)
             {
