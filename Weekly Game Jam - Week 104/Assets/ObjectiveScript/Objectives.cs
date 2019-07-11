@@ -8,7 +8,7 @@ public class Objectives : MonoBehaviour
     public GameObject Objective2Text;
     public GameObject Objective3Text;
     public GameObject OpenQuestPanel;
-    public GameObject CloseQuestPanel;
+ //   public GameObject CloseQuestPanel;
     public GameObject ObjectivePanel1;
     public GameObject ObjectivePanel2;
     public GameObject ObjectivePanel3;
