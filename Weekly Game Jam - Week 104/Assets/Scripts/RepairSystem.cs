@@ -51,7 +51,7 @@ public class RepairSystem : MonoBehaviour
         {
             Generator generator = hit.transform.GetComponent<Generator>();
 
-            if (!generator.Repaired)
+            if (generator != null && !generator.Repaired)
             {
                 if(EneryItem == true && Fuel == true && Tool == true)
                 {

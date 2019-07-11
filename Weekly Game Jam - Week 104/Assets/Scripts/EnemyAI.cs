@@ -228,12 +228,10 @@ public class EnemyAI : MonoBehaviour
 
         if (distanceBetweeenPlayer > attackRadius && distanceBetweeenPlayer <= chaseRadius)
         {
-            Debug.Log("HERE");
             state = State.Chasing;
         }
         else if (distanceBetweeenPlayer > chaseRadius && !FacingTo(player.transform.position))
         {
-            Debug.Log("PATROL");
             state = State.Patrolling;
         }
     }

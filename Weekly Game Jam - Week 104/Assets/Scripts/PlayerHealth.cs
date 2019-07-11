@@ -6,6 +6,8 @@ public class PlayerHealth : MonoBehaviour, IRegenerate
 {
     [SerializeField] RectTransform healthSlider = null;
 
+    [SerializeField] GameObject loseUI = null;
+
     [SerializeField] float maxHealth = 100f;
     [SerializeField] float regenSpeed = 25f;
 
@@ -36,7 +38,7 @@ public class PlayerHealth : MonoBehaviour, IRegenerate
         UpdateHealthUI();
 
         if (health <= 0)
-            StartCoroutine(Die());
+            Die();
     }
 
     public float Regenerate(float valueToRegenerate, float maxAmount, float regenSpeed)
@@ -52,12 +54,13 @@ public class PlayerHealth : MonoBehaviour, IRegenerate
         healthSlider.localScale = newhealth;
     }
 
-    private IEnumerator Die()
+    private void Die()
     {
         Alive = false;
 
-        yield return new WaitForSecondsRealtime(2f);
+        loseUI.SetActive(true);
 
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GetComponent<PlayerController>().enabled = false;   
+
     }
 }
