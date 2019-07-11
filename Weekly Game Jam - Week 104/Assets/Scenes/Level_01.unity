@@ -96,7 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
-  m_LightingDataAsset: {fileID: 112000000, guid: 9aecb28032ca5874c946fc63f66167ab,
+  m_LightingDataAsset: {fileID: 112000000, guid: cf17d6c3fa0592240875edf34e9dc5b5,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -226,6 +226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -295,6 +299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_LargeTable_A
       objectReference: {fileID: 0}
+    - target: {fileID: 172672, guid: a11e981b37ff86749a7a41b2999e3199, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 429048, guid: a11e981b37ff86749a7a41b2999e3199, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1037
@@ -341,11 +349,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 110066, guid: a11e981b37ff86749a7a41b2999e3199, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 110066, guid: a11e981b37ff86749a7a41b2999e3199, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 165168, guid: a11e981b37ff86749a7a41b2999e3199, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6521508, guid: a11e981b37ff86749a7a41b2999e3199, type: 3}
       propertyPath: m_Size.y
@@ -367,6 +379,10 @@ PrefabInstance:
     - target: {fileID: 199228, guid: fe816015a58e629439b27ecca9cdb110, type: 3}
       propertyPath: m_Name
       value: Prop_ChurchBench_A_DM
+      objectReference: {fileID: 0}
+    - target: {fileID: 199228, guid: fe816015a58e629439b27ecca9cdb110, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 485384, guid: fe816015a58e629439b27ecca9cdb110, type: 3}
       propertyPath: m_LocalPosition.x
@@ -414,10 +430,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 160380, guid: fe816015a58e629439b27ecca9cdb110, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 160380, guid: fe816015a58e629439b27ecca9cdb110, type: 3}
       propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137398, guid: fe816015a58e629439b27ecca9cdb110, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -432,6 +452,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -501,6 +525,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,6 +600,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -648,6 +680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B
       objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7183
@@ -704,6 +740,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -776,7 +816,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191530, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428522, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -834,6 +874,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -910,6 +954,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.101
@@ -972,6 +1020,10 @@ PrefabInstance:
     - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1232,7 +1284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191530, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428522, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1290,6 +1342,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1356,7 +1412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1414,6 +1470,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1477,6 +1537,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1547,6 +1611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Painting_D
       objectReference: {fileID: 0}
+    - target: {fileID: 151588, guid: 00941ab5dd3500748ac6e339132b3596, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 483866, guid: 00941ab5dd3500748ac6e339132b3596, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.29
@@ -1610,6 +1678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.39
@@ -1666,6 +1738,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1735,6 +1811,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1819,6 +1899,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -1882,6 +1966,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Items
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981594597190599176, guid: 2ec8aeaa4c200e644aaec3ea9132202e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3981594597190599223, guid: 2ec8aeaa4c200e644aaec3ea9132202e,
         type: 3}
@@ -2061,6 +2150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.6627
@@ -2121,6 +2214,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2199,7 +2296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 115328, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432904, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2264,6 +2361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.5241
@@ -2324,6 +2425,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2397,6 +2502,10 @@ PrefabInstance:
     - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2484,6 +2593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -2552,6 +2665,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2628,6 +2745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndBuilding2_Mid_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 197834, guid: cee6ec354385167478bb8354736f38f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 403376, guid: cee6ec354385167478bb8354736f38f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0895
@@ -2697,6 +2818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Vase_A
       objectReference: {fileID: 0}
+    - target: {fileID: 113612, guid: 67b0685a76617c84b94a58742fdf5e77, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 458986, guid: 67b0685a76617c84b94a58742fdf5e77, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.6637003
@@ -2753,6 +2878,14 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 177394, guid: 67b0685a76617c84b94a58742fdf5e77, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 108526, guid: 67b0685a76617c84b94a58742fdf5e77, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67b0685a76617c84b94a58742fdf5e77, type: 3}
 --- !u!1001 &404562948
@@ -2765,6 +2898,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2837,6 +2974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Lamp_A
       objectReference: {fileID: 0}
+    - target: {fileID: 166050, guid: c9ec0cf2c9954d144bcfcefa4161913f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 459410, guid: c9ec0cf2c9954d144bcfcefa4161913f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.198
@@ -2881,6 +3022,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 133434, guid: c9ec0cf2c9954d144bcfcefa4161913f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 185748, guid: c9ec0cf2c9954d144bcfcefa4161913f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9ec0cf2c9954d144bcfcefa4161913f, type: 3}
 --- !u!1001 &429206539
@@ -2893,6 +3042,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2965,7 +3118,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191530, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428522, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3023,6 +3176,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3089,7 +3246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 115328, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432904, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3154,6 +3311,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabin1_Stairs (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 161288, guid: 2bf6f50fca3051b4e89bd91d63c3f247, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 494148, guid: 2bf6f50fca3051b4e89bd91d63c3f247, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1687
@@ -3216,6 +3377,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3282,7 +3447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3340,6 +3505,10 @@ PrefabInstance:
     - target: {fileID: 197834, guid: cee6ec354385167478bb8354736f38f5, type: 3}
       propertyPath: m_Name
       value: IndBuilding2_Mid_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 197834, guid: cee6ec354385167478bb8354736f38f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 403376, guid: cee6ec354385167478bb8354736f38f5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3608,7 +3777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114648, guid: 8bdc869548e29fd4fbdf4c6b361ce4ce, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 452134, guid: 8bdc869548e29fd4fbdf4c6b361ce4ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3684,6 +3853,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3783,6 +3956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1921508391727336, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4684852159627100, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3861,6 +4038,26 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[7].value
       value: 
       objectReference: {fileID: 2052925715}
+    - target: {fileID: 1174561656411244, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1190243862479274, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464588972583154, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1119527022332632, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1083654306558948, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91db971f356a07d42b095b71e57a75af, type: 3}
 --- !u!4 &565539838 stripped
@@ -3879,6 +4076,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3945,7 +4146,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191530, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428522, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4006,7 +4207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 140506, guid: 929978fd58ecd9f4a8dfb230290db510, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967287
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 463300, guid: 929978fd58ecd9f4a8dfb230290db510, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4093,6 +4294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3880005
@@ -4155,6 +4360,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4225,6 +4434,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3880005
@@ -4287,6 +4500,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4416,7 +4633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114648, guid: 8bdc869548e29fd4fbdf4c6b361ce4ce, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 452134, guid: 8bdc869548e29fd4fbdf4c6b361ce4ce, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4474,6 +4691,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4538,6 +4759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3880005
@@ -4600,6 +4825,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4664,6 +4893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.7183
@@ -4720,6 +4953,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4790,6 +5027,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3880005
@@ -4853,6 +5094,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A
       objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.887
@@ -4899,6 +5144,111 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+--- !u!1 &696223092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 696223097}
+  - component: {fileID: 696223096}
+  - component: {fileID: 696223095}
+  - component: {fileID: 696223094}
+  - component: {fileID: 696223093}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &696223093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696223092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44c3248915f1dea4e91a290784ce90c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winUI: {fileID: 1806854197}
+--- !u!65 &696223094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696223092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &696223095
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696223092}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8fbef37193f6cf24ea4d3c0f9d7246a9, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &696223096
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696223092}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &696223097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696223092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -18.37}
+  m_LocalScale: {x: 5.9568, y: 15.514, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &707888052 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 428522, guid: 2808d115c4ff0204e9ba7859b1ba3ec9,
@@ -4947,6 +5297,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Bed_B
       objectReference: {fileID: 0}
+    - target: {fileID: 113680, guid: 91365c327d21a0343b4fa73a722f938d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498862, guid: 91365c327d21a0343b4fa73a722f938d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.29
@@ -4991,9 +5345,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 160632, guid: 91365c327d21a0343b4fa73a722f938d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 190340, guid: 91365c327d21a0343b4fa73a722f938d, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 190340, guid: 91365c327d21a0343b4fa73a722f938d, type: 3}
       propertyPath: m_NavMeshLayer
@@ -5011,6 +5369,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5107,7 +5469,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 104646, guid: 6d668391662efbf43ac29d9224a0b6d9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 415982, guid: 6d668391662efbf43ac29d9224a0b6d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5202,6 +5564,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -5270,6 +5636,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5345,6 +5715,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5590,7 +5964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5703,6 +6077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3880005
@@ -5766,6 +6144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2817
@@ -5822,6 +6204,10 @@ PrefabInstance:
     - target: {fileID: 116360, guid: ab34233292d193c47948f094a12fc6c7, type: 3}
       propertyPath: m_Name
       value: Prop_Chair_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 116360, guid: ab34233292d193c47948f094a12fc6c7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 406252, guid: ab34233292d193c47948f094a12fc6c7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5881,11 +6267,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 179906, guid: ab34233292d193c47948f094a12fc6c7, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 179906, guid: ab34233292d193c47948f094a12fc6c7, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 150862, guid: ab34233292d193c47948f094a12fc6c7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6571980, guid: ab34233292d193c47948f094a12fc6c7, type: 3}
       propertyPath: m_Size.y
@@ -5907,6 +6297,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5975,6 +6369,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -6037,6 +6435,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6155,6 +6557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.39
@@ -6220,7 +6626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 115328, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432904, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6285,6 +6691,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Sofa_A
       objectReference: {fileID: 0}
+    - target: {fileID: 132456, guid: d8740ed2b9dd7eb4f9b01ee19dcf0cd3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432834, guid: d8740ed2b9dd7eb4f9b01ee19dcf0cd3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.2294
@@ -6331,11 +6741,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 124570, guid: d8740ed2b9dd7eb4f9b01ee19dcf0cd3, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 124570, guid: d8740ed2b9dd7eb4f9b01ee19dcf0cd3, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 182092, guid: d8740ed2b9dd7eb4f9b01ee19dcf0cd3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6529600, guid: d8740ed2b9dd7eb4f9b01ee19dcf0cd3, type: 3}
       propertyPath: m_Size.y
@@ -6401,6 +6815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -6463,6 +6881,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6694,6 +7116,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2628
@@ -6757,7 +7183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6901,6 +7327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3899994
@@ -6966,7 +7396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7030,6 +7460,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7102,6 +7536,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -7165,6 +7603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.6999
@@ -7225,6 +7667,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7442,7 +7888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7504,6 +7950,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7799,7 +8249,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7994,6 +8444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -8059,7 +8513,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8117,6 +8571,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8193,6 +8651,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3880005
@@ -8258,7 +8720,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8413,6 +8875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38700008
@@ -8526,7 +8992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8585,6 +9051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Clock_A
       objectReference: {fileID: 0}
+    - target: {fileID: 174376, guid: 1e627c2e1810cde4897b566ba90fd986, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 481948, guid: 1e627c2e1810cde4897b566ba90fd986, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.13
@@ -8629,9 +9099,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 147072, guid: 1e627c2e1810cde4897b566ba90fd986, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 197594, guid: 1e627c2e1810cde4897b566ba90fd986, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 197594, guid: 1e627c2e1810cde4897b566ba90fd986, type: 3}
       propertyPath: m_NavMeshLayer
@@ -8649,6 +9123,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8712,6 +9190,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8782,7 +9264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9061,6 +9543,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IndBuilding2_Mid_A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 197834, guid: cee6ec354385167478bb8354736f38f5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 403376, guid: cee6ec354385167478bb8354736f38f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09
@@ -9136,6 +9622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.075658
@@ -9196,6 +9686,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9304,6 +9798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -9384,6 +9882,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9478,6 +9980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.2103
@@ -9538,6 +10044,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9602,6 +10112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38799953
@@ -9664,6 +10178,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9730,7 +10248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9788,6 +10306,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9849,6 +10371,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9916,6 +10442,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9994,7 +10524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10069,7 +10599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10133,6 +10663,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10249,6 +10783,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.388999
@@ -10314,7 +10852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 104646, guid: 6d668391662efbf43ac29d9224a0b6d9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 415982, guid: 6d668391662efbf43ac29d9224a0b6d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10399,7 +10937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 191530, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 40
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 428522, guid: 2808d115c4ff0204e9ba7859b1ba3ec9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10467,6 +11005,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10536,6 +11078,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10712,6 +11258,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38799953
@@ -10780,6 +11330,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10904,6 +11458,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3899994
@@ -10969,7 +11527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 104646, guid: 6d668391662efbf43ac29d9224a0b6d9, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 415982, guid: 6d668391662efbf43ac29d9224a0b6d9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11030,7 +11588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 111180, guid: f20c46319d796fd49812eef9f80d87a6, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 482658, guid: f20c46319d796fd49812eef9f80d87a6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11088,6 +11646,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11228,7 +11790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 122088, guid: 210d38b43ba064d418e74fe6c3791d87, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 56
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 418962, guid: 210d38b43ba064d418e74fe6c3791d87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11287,6 +11849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Cabinet_A
       objectReference: {fileID: 0}
+    - target: {fileID: 190816, guid: d5d4dde01c76a7e4397910ce96898cb1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 428554, guid: d5d4dde01c76a7e4397910ce96898cb1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.4921
@@ -11333,11 +11899,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 164674, guid: d5d4dde01c76a7e4397910ce96898cb1, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 164674, guid: d5d4dde01c76a7e4397910ce96898cb1, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 111928, guid: d5d4dde01c76a7e4397910ce96898cb1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5d4dde01c76a7e4397910ce96898cb1, type: 3}
@@ -11351,6 +11921,10 @@ PrefabInstance:
     - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11415,7 +11989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 150372, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 450686, guid: fa96530a2d3d74a4796598aa6fdfecb2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11473,6 +12047,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11544,6 +12122,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11632,6 +12214,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899392
@@ -11699,6 +12285,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.38899994
@@ -11762,6 +12352,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Prop_Lamp_B
       objectReference: {fileID: 0}
+    - target: {fileID: 100346, guid: 0be8dee6ec685e54080e3e3cb3c0101b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 489576, guid: 0be8dee6ec685e54080e3e3cb3c0101b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.068
@@ -11806,8 +12400,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 158972, guid: 0be8dee6ec685e54080e3e3cb3c0101b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 155034, guid: 0be8dee6ec685e54080e3e3cb3c0101b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0be8dee6ec685e54080e3e3cb3c0101b, type: 3}
+--- !u!1 &1806854197 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1039056911, guid: ce6beeb9d033103478db4a00edcbe973,
+    type: 3}
+  m_PrefabInstance: {fileID: 2176267734560347274}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1812601723 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2125914901400296179, guid: 583b7f20b5aaf7c4c81d84de57c51bad,
@@ -11824,6 +12432,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11908,6 +12520,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.388999
@@ -11970,6 +12586,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12042,7 +12662,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 136794, guid: 513a0e1241d2a72459d1db2f9dc27f3e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 136794, guid: 513a0e1241d2a72459d1db2f9dc27f3e, type: 3}
       propertyPath: m_NavMeshLayer
@@ -12131,6 +12751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3899994
@@ -12196,7 +12820,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 115328, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432904, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12261,6 +12885,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Deco_WindowGlass_B
       objectReference: {fileID: 0}
+    - target: {fileID: 181246, guid: eaaa713946d21c349acbc0f8b739f316, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 427490, guid: eaaa713946d21c349acbc0f8b739f316, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3
@@ -12320,7 +12948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12389,6 +13017,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.4374
@@ -12456,6 +13088,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3899994
@@ -12518,6 +13154,10 @@ PrefabInstance:
     - target: {fileID: 181246, guid: eaaa713946d21c349acbc0f8b739f316, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Deco_WindowGlass_B (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 181246, guid: eaaa713946d21c349acbc0f8b739f316, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 427490, guid: eaaa713946d21c349acbc0f8b739f316, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12591,6 +13231,10 @@ PrefabInstance:
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_B (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12853,7 +13497,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 192102, guid: 536c47ed6c4df7448adae963b41045e3, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 470334, guid: 536c47ed6c4df7448adae963b41045e3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12914,7 +13558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12975,7 +13619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 101802, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 4294967255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 491206, guid: 3f9bb54b0ba0f5a4b8aa264f45880ffc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13044,7 +13688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 115328, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432904, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13105,7 +13749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 115328, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 432904, guid: 5700c2dc6724c3a4fb462b0001e31742, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13169,6 +13813,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13245,6 +13893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Indbuilding2_Door_A (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.388999
@@ -13314,6 +13966,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrickHouse_Floor_Mid_A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 193184, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 432164, guid: 241fefb01734dcb4bb0b659e97880922, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.887
@@ -13374,6 +14030,10 @@ PrefabInstance:
     - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_Name
       value: Indbuilding2_Door_A (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 186794, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 498076, guid: ec7647d42b83c5b4389d766c85c997e4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14034,6 +14694,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patrol Area
       objectReference: {fileID: 0}
+    - target: {fileID: 9018094610661870562, guid: 13076225d63f3484193a4b4d47ee589d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9018094610661870588, guid: 13076225d63f3484193a4b4d47ee589d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14128,6 +14793,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 9.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018094610045742039, guid: 13076225d63f3484193a4b4d47ee589d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018094610096745885, guid: 13076225d63f3484193a4b4d47ee589d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018094611019007298, guid: 13076225d63f3484193a4b4d47ee589d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018094611164583466, guid: 13076225d63f3484193a4b4d47ee589d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13076225d63f3484193a4b4d47ee589d, type: 3}

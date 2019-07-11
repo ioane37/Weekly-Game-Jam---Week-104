@@ -60,7 +60,8 @@ public class PlayerHealth : MonoBehaviour, IRegenerate
 
         loseUI.SetActive(true);
 
-        GetComponent<PlayerController>().enabled = false;   
+        GetComponent<PlayerController>().enabled = false;
 
+        AudioManager.Instance.ChangeMusic(AudioManager.SoundType.Background);
     }
 }
