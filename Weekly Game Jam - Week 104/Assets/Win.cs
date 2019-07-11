@@ -12,6 +12,8 @@ public class Win : MonoBehaviour
             winUI.SetActive(true);
 
             other.GetComponent<PlayerController>().enabled = false;
+            other.GetComponentInChildren<CameraController>().enabled = false;
+            FindObjectOfType<EnemyAI>().enabled = false;
 
             AudioManager.Instance.StopPlaying();
         }

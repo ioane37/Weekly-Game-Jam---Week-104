@@ -40,8 +40,8 @@ public class MenuControls : MonoBehaviour
     public void GameStart()
     {
         gamestarts.GetComponent<Animation>().Play();
-        credit.GetComponent<Animation>().Play();
-        options.GetComponent<Animation>().Play();
+        //credit.GetComponent<Animation>().Play();
+        //options.GetComponent<Animation>().Play();
         logo.GetComponent<Animation>().Play();
         QuitGame.GetComponent<Animation>().Play();
 

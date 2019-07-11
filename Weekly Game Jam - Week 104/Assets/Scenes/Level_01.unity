@@ -14304,9 +14304,9 @@ PrefabInstance:
     - target: {fileID: 2176267734466088806, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
       propertyPath: m_Text
-      value: 'Check The Closet
-
-'
+      value: "This item is special you can`t fix a broken generator without a tool
+        , you have fuel and energy but tool is different you need it to fix hardware
+        issues\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 2176267734466088806, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
@@ -14321,7 +14321,8 @@ PrefabInstance:
     - target: {fileID: 2176267734349904962, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
       propertyPath: m_Text
-      value: Generator Needs Fuel To Work! Be Carefull!
+      value: "This item is need to start the engine combined with the energy\r, But
+        Be Carefull!\n"
       objectReference: {fileID: 0}
     - target: {fileID: 2176267733354242142, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
@@ -14373,6 +14374,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 868318485}
+    - target: {fileID: 1039056911, guid: ce6beeb9d033103478db4a00edcbe973, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039056912, guid: ce6beeb9d033103478db4a00edcbe973, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 280.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039056912, guid: ce6beeb9d033103478db4a00edcbe973, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 255.9
+      objectReference: {fileID: 0}
     - target: {fileID: 1769808561, guid: ce6beeb9d033103478db4a00edcbe973, type: 3}
       propertyPath: text
       value: 
