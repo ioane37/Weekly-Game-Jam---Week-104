@@ -17,6 +17,8 @@ TagManager:
   - Anywhere
   - QuitGame
   - Cover
+  - LeftDoor
+  - RightDoor
   layers:
   - Default
   - TransparentFX
