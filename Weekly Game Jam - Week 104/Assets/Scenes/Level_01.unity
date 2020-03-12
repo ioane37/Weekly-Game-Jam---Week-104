@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4103788, g: 0.5075737, b: 0.59987605, a: 1}
+  m_IndirectSpecularColor: {r: 0.3913482, g: 0.49233425, b: 0.5901257, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: cf17d6c3fa0592240875edf34e9dc5b5,
     type: 2}
   m_UseShadowmask: 1
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &122340272
@@ -1150,6 +1150,7 @@ MonoBehaviour:
   volumetricShadowDimmer: 1
   shadowFadeDistance: 10000
   contactShadows: 0
+  shadowTint: {r: 0, g: 0, b: 0, a: 1}
   viewBiasMin: 0.2
   viewBiasMax: 100
   viewBiasScale: 1
@@ -1173,10 +1174,6 @@ MonoBehaviour:
   shadowAlgorithm: 0
   shadowVariant: 0
   shadowPrecision: 0
-  shadowData:
-    format: 0
-    data: 
-  shadowDatas: []
 --- !u!114 &163833873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1189,8 +1186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 4
-  m_Version: 4
+  version: 5
+  m_Version: 5
   directionalIntensity: 3.1415927
   punctualIntensity: 600
   areaIntensity: 200
@@ -1200,8 +1197,6 @@ MonoBehaviour:
   lightDimmer: 1
   m_VolumetricDimmer: 1
   lightUnit: 2
-  sunDiskSize: 1
-  sunHaloSize: 0.1
   fadeDistance: 10000
   affectDiffuse: 1
   affectSpecular: 1
@@ -1222,11 +1217,14 @@ MonoBehaviour:
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
+  useScreenSpaceShadows: 0
   evsmExponent: 15
   evsmLightLeakBias: 0
   evsmVarianceBias: 0.00001
   evsmBlurPasses: 0
   lightLayers: 1
+  lightlayersMask: 1
+  linkShadowLayers: 1
   shadowNearPlane: 0.1
   shadowSoftness: 0.5
   blockerSampleCount: 24
@@ -1917,7 +1915,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &265886566 stripped
@@ -3699,6 +3697,7 @@ MonoBehaviour:
   volumetricShadowDimmer: 1
   shadowFadeDistance: 10000
   contactShadows: 0
+  shadowTint: {r: 0, g: 0, b: 0, a: 1}
   viewBiasMin: 0.2
   viewBiasMax: 100
   viewBiasScale: 1
@@ -3722,10 +3721,6 @@ MonoBehaviour:
   shadowAlgorithm: 0
   shadowVariant: 0
   shadowPrecision: 0
-  shadowData:
-    format: 0
-    data: 
-  shadowDatas: []
 --- !u!114 &529443824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3738,8 +3733,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a68c43fe1f2a47cfa234b5eeaa98012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 4
-  m_Version: 4
+  version: 5
+  m_Version: 5
   directionalIntensity: 3.1415927
   punctualIntensity: 600
   areaIntensity: 200
@@ -3749,8 +3744,6 @@ MonoBehaviour:
   lightDimmer: 1
   m_VolumetricDimmer: 1
   lightUnit: 0
-  sunDiskSize: 1
-  sunHaloSize: 0.1
   fadeDistance: 10000
   affectDiffuse: 1
   affectSpecular: 1
@@ -3771,11 +3764,14 @@ MonoBehaviour:
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
+  useScreenSpaceShadows: 0
   evsmExponent: 15
   evsmLightLeakBias: 0
   evsmVarianceBias: 0.00001
   evsmBlurPasses: 0
   lightLayers: 1
+  lightlayersMask: 1
+  linkShadowLayers: 1
   shadowNearPlane: 0.1
   shadowSoftness: 0.5
   blockerSampleCount: 24
@@ -5295,6 +5291,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -5527,7 +5524,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 733487782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &752741251 stripped
@@ -5885,7 +5882,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 828182405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_HorizontalAxis: Horizontal
@@ -5904,7 +5901,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 828182405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_FirstSelected: {fileID: 0}
@@ -8770,7 +8767,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1242948245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1258879561
@@ -8885,7 +8882,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1203753159}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1300714588
@@ -9278,6 +9275,7 @@ MonoBehaviour:
   volumetricShadowDimmer: 1
   shadowFadeDistance: 10000
   contactShadows: 0
+  shadowTint: {r: 0, g: 0, b: 0, a: 1}
   viewBiasMin: 0.2
   viewBiasMax: 100
   viewBiasScale: 1
@@ -9301,10 +9299,6 @@ MonoBehaviour:
   shadowAlgorithm: 0
   shadowVariant: 0
   shadowPrecision: 0
-  shadowData:
-    format: 0
-    data: 
-  shadowDatas: []
 --- !u!114 &1354920212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9328,8 +9322,6 @@ MonoBehaviour:
   lightDimmer: 1
   m_VolumetricDimmer: 1
   lightUnit: 0
-  sunDiskSize: 1
-  sunHaloSize: 0.1
   fadeDistance: 10000
   affectDiffuse: 1
   affectSpecular: 1
@@ -9350,11 +9342,14 @@ MonoBehaviour:
   displayAreaLightEmissiveMesh: 0
   areaLightCookie: {fileID: 0}
   areaLightShadowCone: 120
+  useScreenSpaceShadows: 0
   evsmExponent: 15
   evsmLightLeakBias: 0
   evsmVarianceBias: 0.00001
   evsmBlurPasses: 0
   lightLayers: 1
+  lightlayersMask: 1
+  linkShadowLayers: 1
   shadowNearPlane: 0.1
   shadowSoftness: 0.5
   blockerSampleCount: 24
@@ -9438,7 +9433,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1362397478}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1371339218
@@ -10830,7 +10825,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 824912194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1559602592
@@ -12127,7 +12122,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1763496394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1769808557 stripped
@@ -13349,6 +13344,7 @@ MonoBehaviour:
     m_Anamorphism: 0
   flipYMode: 0
   fullscreenPassthrough: 0
+  allowDynamicResolution: 0
   customRenderingSettings: 0
   invertFaceCulling: 0
   probeLayerMask:
@@ -13358,6 +13354,10 @@ MonoBehaviour:
     bitDatas:
       data1: 69284255760157
       data2: 4539628424389459968
+    lodBias: 1
+    lodBiasMode: 0
+    maximumLODLevel: 0
+    maximumLODLevelMode: 0
   renderingPathCustomFrameSettingsOverrideMask:
     mask:
       data1: 0
@@ -14140,6 +14140,65 @@ PrefabInstance:
       propertyPath: m_Name
       value: MyCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2176267734248447825, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176267734271534469, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176267733276093627, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176267734848653313, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176267733354242142, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 788873975}
+    - target: {fileID: 2176267733354242142, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Objective1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176267734789917765, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176267734789917787, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 788873975}
+    - target: {fileID: 2176267734789917787, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Objective2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2176267734308721504, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 788873975}
+    - target: {fileID: 2176267734308721504, guid: ce6beeb9d033103478db4a00edcbe973,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Objective3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1039056911, guid: ce6beeb9d033103478db4a00edcbe973, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 949526331290346956, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14265,11 +14324,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 788873975}
-    - target: {fileID: 2176267734848653313, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2176267733193746435, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -14285,21 +14339,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 2176267733276093627, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2176267734089984021, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
       propertyPath: m_Text
       value: "This item is like a nuclear machine where you can regenerate your energy,
         you need to walk and jump to obstacles\r\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176267734271534469, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2176267734466088806, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
@@ -14313,51 +14357,11 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 2176267734248447825, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2176267734349904962, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
       propertyPath: m_Text
       value: "This item is need to start the engine combined with the energy\r, But
         Be Carefull!\n"
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176267733354242142, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 788873975}
-    - target: {fileID: 2176267733354242142, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Objective1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176267734789917765, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176267734789917787, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 788873975}
-    - target: {fileID: 2176267734789917787, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Objective2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2176267734308721504, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 788873975}
-    - target: {fileID: 2176267734308721504, guid: ce6beeb9d033103478db4a00edcbe973,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Objective3
       objectReference: {fileID: 0}
     - target: {fileID: 2176267733738221183, guid: ce6beeb9d033103478db4a00edcbe973,
         type: 3}
@@ -14374,10 +14378,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 868318485}
-    - target: {fileID: 1039056911, guid: ce6beeb9d033103478db4a00edcbe973, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1039056912, guid: ce6beeb9d033103478db4a00edcbe973, type: 3}
       propertyPath: m_SizeDelta.x
       value: 280.4
@@ -14573,11 +14573,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5810419491479807440, guid: 1b9c2f692a44fab46aa2f480c7cda820,
-        type: 3}
-      propertyPath: chaseRadius
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b9c2f692a44fab46aa2f480c7cda820, type: 3}
@@ -14785,6 +14780,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
